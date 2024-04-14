@@ -1,11 +1,20 @@
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {HEIGHT, WIDTH, themeColor} from '../constants/constants';
 import {RFValue} from 'react-native-responsive-fontsize';
 
-export default function Category({backColor, categoryName, textColor}) {
+export default function Category({
+  backColor,
+  categoryName,
+  textColor,
+  image,
+  selectedCategory,
+}) {
   return (
-    <View
+    <TouchableOpacity
+      onPress={() => {
+        selectedCategory();
+      }}
       style={{
         backgroundColor: backColor,
         alignItems: 'center',
@@ -25,7 +34,7 @@ export default function Category({backColor, categoryName, textColor}) {
           // tintColor: themeColor,
         }}
         source={{
-          uri: 'https://i.pinimg.com/736x/fa/4e/bf/fa4ebf0be4baa56e539d5734332d33bf.jpg',
+          uri: image,
         }}
       />
 
@@ -42,6 +51,6 @@ export default function Category({backColor, categoryName, textColor}) {
         }}>
         {categoryName}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 }
