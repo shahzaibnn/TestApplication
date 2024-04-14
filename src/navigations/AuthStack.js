@@ -7,18 +7,18 @@ import ListingScreen from '../screens/ListingScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 const Stack = createNativeStackNavigator();
 
-export default function AppStack() {
+export default function AuthStack() {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen
-        name="Login"
-        component={LoginScreen}
+        name="Listing"
+        component={ListingScreen}
         options={{headerShown: false}}
       />
 
       <Stack.Screen
-        name="Listing"
-        component={ListingScreen}
+        name="Login"
+        component={LoginScreen}
         options={{headerShown: false}}
       />
 

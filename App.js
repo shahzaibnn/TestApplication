@@ -1,10 +1,19 @@
 import {View, Text, SafeAreaView} from 'react-native';
 import React from 'react';
 
+import {NavigationContainer} from '@react-navigation/native';
+import AppStack from './src/navigations/AppStack';
+import Toast from 'react-native-toast-message';
+import ProfileScreen from './src/screens/ProfileScreen';
+import {storage} from './src/constants/constants';
+import AuthStack from './src/navigations/AuthStack';
+
 export default function App() {
   return (
-    <SafeAreaView>
-      <Text>App</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <>{storage.getBoolean('LoggedIn') ? <AuthStack /> : <AppStack />}</>
+      <Toast />
+    </NavigationContainer>
+    // <ProfileScreen />
   );
 }
