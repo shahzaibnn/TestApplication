@@ -53,25 +53,25 @@ export default function DashboardScreen({navigation}) {
       if (category1Objects.length != 0) {
         setCategory1Data(oldArray => [...oldArray, ...category1Objects]);
       }
-      //   const category2Objects = data
-      //     .filter(item => item.category === 'Category 2')
-      //     .slice(startRange, endRange);
+      const category2Objects = data
+        .filter(item => item.category === 'Category 2')
+        .slice(startRange, endRange);
 
-      //   console.log(category2Objects);
+      console.log(category2Objects);
 
-      //   if (category2Objects.length != 0) {
-      //     setCategory2Data(oldArray => [...oldArray, category2Objects]);
-      //   }
+      if (category2Objects.length != 0) {
+        setCategory2Data(oldArray => [...oldArray, category2Objects]);
+      }
 
-      //   const category3Objects = data
-      //     .filter(item => item.category === 'Category 3')
-      //     .slice(startRange, endRange);
+      const category3Objects = data
+        .filter(item => item.category === 'Category 3')
+        .slice(startRange, endRange);
 
-      //   console.log(category3Objects);
+      console.log(category3Objects);
 
-      //   if (category3Objects.length != 0) {
-      //     setCategory3Data(oldArray => [...oldArray, category3Objects]);
-      //   }
+      if (category3Objects.length != 0) {
+        setCategory3Data(oldArray => [...oldArray, category3Objects]);
+      }
 
       setStartRange(startRange + 4);
       setEndRange(endRange + 4);
@@ -144,7 +144,7 @@ export default function DashboardScreen({navigation}) {
                 <TouchableOpacity
                   style={{alignItems: 'center', justifyContent: 'center'}}
                   onPress={() => {
-                    // navigation.navigate('Message');
+                    navigation.navigate('Search');
                   }}>
                   <Fontisto
                     name="search"
@@ -244,7 +244,7 @@ export default function DashboardScreen({navigation}) {
         )}
         keyExtractor={item => item.id}
         // onEndReached={() => }
-        onEndReachedThreshold={0.1}
+        onEndReachedThreshold={0.5}
         scrollEventThrottle={150}
         onMomentumScrollBegin={() => {
           console.log('called ever?');
@@ -257,7 +257,7 @@ export default function DashboardScreen({navigation}) {
           console.log(
             '0000000000000000000000000000000000000000000----------------------------------------',
           );
-          FetchMoreData(); // LOAD MORE DATA
+          FetchMoreData();
           setOnEndReachedCalledDuringMomentumJob(true);
           //   }
         }}

@@ -9,7 +9,7 @@ export default function ListingItem({item, navigation}) {
   return (
     <TouchableOpacity
       onPress={() => {
-        navigation.navigate('DoctorProfile');
+        navigation.navigate('ListingDetail', {item: item});
       }}
       style={{
         flexDirection: 'row',

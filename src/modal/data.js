@@ -2,6 +2,8 @@ export const data = [
   {
     id: 1,
     title: 'Title1',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
@@ -36,6 +38,8 @@ export const data = [
   {
     id: 2,
     title: 'Title2',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
@@ -70,6 +74,8 @@ export const data = [
   {
     id: 3,
     title: 'Title3',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
@@ -104,12 +110,14 @@ export const data = [
   {
     id: 4,
     title: 'Title4',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
     description:
       'My experience in real estate investment began out of a desire to diversify my investment portfolio and secure a more stable financial future. ',
-    category: 'Category 1',
+    category: 'Category 3',
     imageArray: [
       {
         id: 1,
@@ -138,6 +146,8 @@ export const data = [
   {
     id: 5,
     title: 'Title5',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
@@ -172,6 +182,8 @@ export const data = [
   {
     id: 6,
     title: 'Title6',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
@@ -206,6 +218,8 @@ export const data = [
   {
     id: 7,
     title: 'Title7',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
@@ -240,12 +254,14 @@ export const data = [
   {
     id: 8,
     title: 'Title8',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
     description:
       'My experience in real estate investment began out of a desire to diversify my investment portfolio and secure a more stable financial future. ',
-    category: 'Category 1',
+    category: 'Category 2',
     imageArray: [
       {
         id: 1,
@@ -274,12 +290,14 @@ export const data = [
   {
     id: 9,
     title: 'Title9',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
     description:
       'My experience in real estate investment began out of a desire to diversify my investment portfolio and secure a more stable financial future. ',
-    category: 'Category 1',
+    category: 'Category 3',
     imageArray: [
       {
         id: 1,
@@ -308,12 +326,14 @@ export const data = [
   {
     id: 10,
     title: 'Title10',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
     description:
       'My experience in real estate investment began out of a desire to diversify my investment portfolio and secure a more stable financial future. ',
-    category: 'Category 1',
+    category: 'Category 2',
     imageArray: [
       {
         id: 1,
@@ -342,12 +362,14 @@ export const data = [
   {
     id: 11,
     title: 'Title11',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',
     description:
       'My experience in real estate investment began out of a desire to diversify my investment portfolio and secure a more stable financial future. ',
-    category: 'Category 1',
+    category: 'Category 3',
     imageArray: [
       {
         id: 1,
@@ -376,6 +398,8 @@ export const data = [
   {
     id: 12,
     title: 'Title12',
+    contact: '03212185174',
+    price: '$ 3.40',
     thumbnail:
       'https://imageio.forbes.com/specials-images/imageserve/657b29edf09ae8354c4debba/Real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is/960x0.jpg?height=474&width=711&fit=bounds',
     ratings: '3.5',

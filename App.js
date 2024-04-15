@@ -7,6 +7,7 @@ import Toast from 'react-native-toast-message';
 import ProfileScreen from './src/screens/ProfileScreen';
 import {storage} from './src/constants/constants';
 import AuthStack from './src/navigations/AuthStack';
+import ListingDetailScreen from './src/screens/ListingDetailScreen';
 
 export default function App() {
   return (
@@ -15,5 +16,7 @@ export default function App() {
       <Toast />
     </NavigationContainer>
     // <ProfileScreen />
+
+    // <ListingDetailScreen />
   );
 }
