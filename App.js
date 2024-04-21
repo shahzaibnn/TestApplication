@@ -1,22 +1,52 @@
-import {View, Text, SafeAreaView} from 'react-native';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {Button, SafeAreaView, View} from 'react-native';
+import AnimatedCircularProgress from './AnimatedCircularProgress';
 
-import {NavigationContainer} from '@react-navigation/native';
-import AppStack from './src/navigations/AppStack';
-import Toast from 'react-native-toast-message';
-import ProfileScreen from './src/screens/ProfileScreen';
-import {storage} from './src/constants/constants';
-import AuthStack from './src/navigations/AuthStack';
-import ListingDetailScreen from './src/screens/ListingDetailScreen';
+function App(): JSX.Element {
+  const [progress, setProgress] = React.useState(0);
+  const [trigger, setTrigger] = useState(true);
 
-export default function App() {
+  useEffect(() => {
+    if (!trigger) {
+      setTrigger(true);
+    }
+  }, [trigger]);
+
   return (
-    <NavigationContainer>
-      <>{storage.getBoolean('LoggedIn') ? <AuthStack /> : <AppStack />}</>
-      <Toast />
-    </NavigationContainer>
-    // <ProfileScreen />
+    <SafeAreaView
+      style={{
+        flex: 1,
+      }}>
+      {trigger ? (
+        <AnimatedCircularProgress
+          percentage={progress}
+          setTrigger={setTrigger}
+        />
+      ) : (
+        <></>
+      )}
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-around',
+          marginTop: 40,
+        }}>
+        <Button
+          title="Start"
+          onPress={() => {
+            setProgress(100);
+          }}
+        />
 
-    // <ListingDetailScreen />
+        <Button
+          title="change"
+          onPress={() => {
+            setTrigger(!trigger);
+          }}
+        />
+      </View>
+    </SafeAreaView>
   );
 }
+
+export default App;
